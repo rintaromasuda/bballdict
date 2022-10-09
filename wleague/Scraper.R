@@ -51,10 +51,10 @@ for(teamHref in teamHrefs) {
   }
 }
 
-write.table(df_result, file = "WLeaguePlayerNameDict_202122_CSV_UTF8_RawData.csv", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = ",", fileEncoding = "UTF-8")
+write.table(df_result, file = "WLeaguePlayerNameDict_202223_CSV_UTF8_RawData.csv", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = ",", fileEncoding = "UTF-8")
 
 df_tsv <- df_result
 df_tsv$PoS <- "人名"
 
-write.table(df_tsv, file = "WLeaguePlayerNameDict_202122_TSV_UTF8.csv", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", fileEncoding = "UTF-8")
+write.table(df_tsv, file = "WLeaguePlayerNameDict_202223_TSV_UTF8.txt", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", fileEncoding = "UTF-8")
 
